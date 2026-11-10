@@ -1,0 +1,12 @@
+name: drill
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  stuck-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate a stuck build (sleep 20 minutes)
+        run: sleep 1200
